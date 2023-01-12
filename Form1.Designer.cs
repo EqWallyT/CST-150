@@ -1,5 +1,5 @@
 ﻿
-namespace Activity_14
+namespace Activity1
 {
     partial class Form1
     {
@@ -29,170 +29,159 @@ namespace Activity_14
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.lstShapes = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbOutline = new System.Windows.Forms.RadioButton();
-            this.rbFill = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbDate = new System.Windows.Forms.CheckBox();
-            this.cbName = new System.Windows.Forms.CheckBox();
-            this.btnDraw = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasksToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // menuStrip1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Select a shape";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.projectsToolStripMenuItem,
+            this.tasksToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(534, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // lstShapes
+            // fileToolStripMenuItem
             // 
-            this.lstShapes.FormattingEnabled = true;
-            this.lstShapes.Items.AddRange(new object[] {
-            "Circle",
-            "Triangle",
-            "Rectangle",
-            "Pentagon",
-            "Hexagon"});
-            this.lstShapes.Location = new System.Drawing.Point(73, 92);
-            this.lstShapes.Name = "lstShapes";
-            this.lstShapes.Size = new System.Drawing.Size(120, 95);
-            this.lstShapes.TabIndex = 1;
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // groupBox1
+            // openToolStripMenuItem
             // 
-            this.groupBox1.Controls.Add(this.rbOutline);
-            this.groupBox1.Controls.Add(this.rbFill);
-            this.groupBox1.Location = new System.Drawing.Point(73, 203);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 91);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Select Fill Mode:";
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_click);
             // 
-            // rbOutline
+            // projectsToolStripMenuItem
             // 
-            this.rbOutline.AutoSize = true;
-            this.rbOutline.Location = new System.Drawing.Point(6, 19);
-            this.rbOutline.Name = "rbOutline";
-            this.rbOutline.Size = new System.Drawing.Size(58, 17);
-            this.rbOutline.TabIndex = 3;
-            this.rbOutline.TabStop = true;
-            this.rbOutline.Text = "Outline";
-            this.rbOutline.UseVisualStyleBackColor = true;
+            this.projectsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectsToolStripMenuItem1});
+            this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
+            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.projectsToolStripMenuItem.Text = "Projects";
             // 
-            // rbFill
+            // projectsToolStripMenuItem1
             // 
-            this.rbFill.AutoSize = true;
-            this.rbFill.Location = new System.Drawing.Point(6, 55);
-            this.rbFill.Name = "rbFill";
-            this.rbFill.Size = new System.Drawing.Size(37, 17);
-            this.rbFill.TabIndex = 4;
-            this.rbFill.TabStop = true;
-            this.rbFill.Text = "Fill";
-            this.rbFill.UseVisualStyleBackColor = true;
+            this.projectsToolStripMenuItem1.Name = "projectsToolStripMenuItem1";
+            this.projectsToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.projectsToolStripMenuItem1.Text = "Projects";
+            this.projectsToolStripMenuItem1.Click += new System.EventHandler(this.projectsToolStripMenuItem1_Click);
             // 
-            // groupBox2
+            // tasksToolStripMenuItem
             // 
-            this.groupBox2.Controls.Add(this.cbName);
-            this.groupBox2.Controls.Add(this.cbDate);
-            this.groupBox2.Location = new System.Drawing.Point(73, 300);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 79);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Select details:";
+            this.tasksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tasksToolStripMenuItem1});
+            this.tasksToolStripMenuItem.Name = "tasksToolStripMenuItem";
+            this.tasksToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.tasksToolStripMenuItem.Text = "Tasks";
             // 
-            // cbDate
+            // tasksToolStripMenuItem1
             // 
-            this.cbDate.AutoSize = true;
-            this.cbDate.Location = new System.Drawing.Point(6, 19);
-            this.cbDate.Name = "cbDate";
-            this.cbDate.Size = new System.Drawing.Size(49, 17);
-            this.cbDate.TabIndex = 4;
-            this.cbDate.Text = "Date";
-            this.cbDate.UseVisualStyleBackColor = true;
+            this.tasksToolStripMenuItem1.Name = "tasksToolStripMenuItem1";
+            this.tasksToolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.tasksToolStripMenuItem1.Text = "Tasks";
             // 
-            // cbName
+            // comboBox1
             // 
-            this.cbName.AutoSize = true;
-            this.cbName.Location = new System.Drawing.Point(6, 42);
-            this.cbName.Name = "cbName";
-            this.cbName.Size = new System.Drawing.Size(54, 17);
-            this.cbName.TabIndex = 4;
-            this.cbName.Text = "Name";
-            this.cbName.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Weclome to CST 150!",
+            "Happy to be HERE!",
+            "WOOOOOOOH!"});
+            this.comboBox1.Location = new System.Drawing.Point(63, 76);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // btnDraw
+            // label1
             // 
-            this.btnDraw.Location = new System.Drawing.Point(309, 282);
-            this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(129, 36);
-            this.btnDraw.TabIndex = 4;
-            this.btnDraw.Text = "Draw";
-            this.btnDraw.UseVisualStyleBackColor = true;
-            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(316, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "WOOOOH";
             // 
-            // btnClear
+            // textBox1
             // 
-            this.btnClear.Location = new System.Drawing.Point(469, 282);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(128, 36);
-            this.btnClear.TabIndex = 5;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(63, 136);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 3;
             // 
-            // lblName
+            // checkBox1
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(434, 222);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(0, 13);
-            this.lblName.TabIndex = 6;
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(291, 139);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(104, 17);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Check the box :)";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // lblDate
+            // btn1
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(434, 246);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(0, 13);
-            this.lblDate.TabIndex = 7;
+            this.btn1.Location = new System.Drawing.Point(100, 228);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(75, 23);
+            this.btn1.TabIndex = 5;
+            this.btn1.Text = "Go!";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // panel1
+            // listBox1
             // 
-            this.panel1.Location = new System.Drawing.Point(292, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 190);
-            this.panel1.TabIndex = 8;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "Item 1",
+            "Item 2",
+            "Item 3 ",
+            "Item 4"});
+            this.listBox1.Location = new System.Drawing.Point(291, 200);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 6;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(637, 391);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnDraw);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lstShapes);
-            this.Controls.Add(this.label2);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(534, 357);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,20 +189,19 @@ namespace Activity_14
 
         #endregion
 
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tasksToolStripMenuItem;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstShapes;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rbOutline;
-        private System.Windows.Forms.RadioButton rbFill;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox cbName;
-        private System.Windows.Forms.CheckBox cbDate;
-        private System.Windows.Forms.Button btnDraw;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tasksToolStripMenuItem1;
     }
 }
 
