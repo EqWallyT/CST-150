@@ -77,6 +77,11 @@ namespace Milestone1
 
             return null;
         }
+        public void sortData()
+        {
+            //Compare the Names of each list item and sort them by Alphabetical order
+            l1 = getItems().OrderBy(s => s.Name).ToList();
+        }
 
         public void editItem(string n,int quantity)
         {

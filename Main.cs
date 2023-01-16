@@ -22,6 +22,7 @@ namespace Milestone1
         private void Form1_Load(object sender, EventArgs e)
         {
             im = new InventoryManager();
+            MessageBox.Show("Welcome To the Storage Application!");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,5 +60,10 @@ namespace Milestone1
             Close();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            im.sortData();
+            MessageBox.Show("The inventory Has been Sorted by Alphabetical order");
+        }
     }
 }
